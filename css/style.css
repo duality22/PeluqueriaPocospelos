@@ -4,6 +4,14 @@
     margin: 0px;
     font-family: 'Varela Round', sans-serif;
 }
+:root {
+--chocolate-web: #d5651fff;
+--pacific-blue: #2ea6c1ff;
+--citron: #a5b133ff;
+--brunswick-green: #1e5148ff;
+--bone: #d0c6aaff;
+}
+
 body {
     background-color: #ffffff;
 }
@@ -252,26 +260,6 @@ main {
 
 
 /*TERMINA EL FOOTER*/
-
-.btn,
-a.btn {
-    display: inline-block;
-    padding: 0.8em 1.5em;
-    text-decoration: none;
-    border: 1px solid #555;
-    color: #555;
-    font-size: 1em;
-    font-weight: 800;
-}
-
-.btn.btn-primary,
-a.btn.btn-primary {
-    background-image: linear-gradient(to right, #ff9d00, #ffb500, #ffce00, #ffe600, #f7ff00);
-    border-color: #FFBE51;
-    color: rgb(0, 0, 0);
-    
-}
-
 
 button {
     font-family: inherit;
