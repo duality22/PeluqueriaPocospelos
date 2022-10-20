@@ -11,140 +11,190 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://">
     <title>Peluqueria de mascotas</title>
+    <link rel="stylesheet" href="nosotrosscs/nosotros.css">
+    <!--BOOTstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/nosotros.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!--CUSTOM AWESOME-->
     <!--CUSTOM font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <!--SCRIPT-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
 <body>
+      <div id="app_container">
+        <header>
+            <div class="logo">  
+                   <h2 class="nombre-empresa">Peluqueria Pocos pelos</h2>  
+            </div>
+            <div class="menu"> 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="gray" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                </svg>
+            </div>
+            <nav class="items_menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+          <section class="section_banner">
+                        <p>En Poco pelos tenemos las mejores 
+                          peluquerías para perros y gatos con los 
+                          mejores peluqueros de mascotas que podrás encontrar.
+                        </p>
+                    
+           </section>
+        </main>
 
-    <header>
-         <div class="container__header">
-           
-              <div class="logo">  
-                  <img src="img/logo-petshop.png" alt="logo Peluqueria"> 
+        <div class="app_container">
+          <section class="info_container">
+                 <div class="info">
+                     <h2>Horarios</h2>
+                     <p>Lunes a viernes: 8 a 20:30 hs
+                        Sábados: 9 a 20:30 hs
+                        Domingos: 10 a 20 hs</p>
               </div>
-                  <h2 class="nombre-empresa">Peluqueria Pocos pelos</h2> 
-     
-              <div class="menu">
-                <nav>
-                       <ul>
-                       <li><a href="index.html">Inicio</a></li>
-                       <li><a href="nosotros.html">Nosotros</a></li>
-                       <li><a href="servicios.html">Servicios</a></li>
-                       <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-               </nav>
-           </div>
-         </div>
-    </header>
-
-    <main>
-        <section class="nosotros__banner">
-                       <div class="sobre__nosotros">
-                            <img src="img/corte6.jpg" alt="ilustracion">
-                       <div class="text">
-                          <h1>Sobre nosotros</h1>
-                          <p>El cuidado del pelo de tu mascota es esencial para mantenerla linda y saludable. En Pocos pelos ofrecemos baños, cortes y peinados que combinan estos dos aspectos fundamentales para el bienestar de tu mascota.</p>
-                       </div>
-                       </div>
-        </section>
-
-        <section>
-               <div class="info">
-                   <h2>informacion</h2>
-               </div> 
-               <div class="info__container">
-                   <p>Lunes a viernes: 8 a 20:30 hs
-                      Sábados: 9 a 20:30 hs
-                      Domingos: 10 a 20 hs</p>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit id fuga! Esse consequuntur inventore error, 
-                      iusto magnam, ipsum quis et aliquam saepe voluptates quibusdam sint recusandae
-                     blanditiis, reprehenderit modi.</p>
-                   <p>Reseñas</p>
-            </div>
-        </section>
-        
-    </main>
-     
-    <div class="preguntas">
-        <h2>Preguntas frecuentes</h2>
-    </div>
-
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                ¿Tengo que pedir turno para llevar a mi mascota a la peluquería canina?
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>Si, todos nuestros peluqueros atienden con turno previo</strong> , podés pedir un turno de peluquería canina en este
-                 <a href="contacto.html"> <strong>link</strong>
-                 </a>
-              en cualquiera de nuestras sucursales que tengan el servicio disponible.
-            </div>
+          </section>
           </div>
+
+          <div class="preguntas">
+            <h2>Preguntas frecuentes</h2>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-               ¿Puedo llevar a mi gato al a peluquería de mascotas?
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>¡Nuestros amigos felinos no son muy amigos de la peluquería!</strong> Si tuvieras cualquier 
-                      <a href="contacto.html"><strong>consulta</strong></a> 
-                      sobre peluquería felina, comunicate con uno de nuestros peluqueros que te van a poder asesorar específicamente sobre las necesidades de tu gato.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                ¿Si mi perro tiene pulgas puedo llevarlo a la peluquería?
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Nuestras peluquerías mantienen un alto nivel de calidad de higiene y para esto queremos evitar contagios entre los perros que nos visitan. Por esto, si tu perro tiene pulgas no podrá ingresar al turno. Deberás desparasitarlo previamente y, una vez libre de pulgas y garrapatas, lo recibiremos para darle el servicio que se merece.
-            </div>
+         
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Tengo que pedir turno para llevar a mi mascota a la peluquería canina?
+              </button>
+            </h2>
+        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Si, todos nuestros peluqueros atienden con turno previo</strong> , podés pedir un turno de peluquería canina en este
+               <a href="contacto.html"> <strong>link</strong>
+               </a>
+            en cualquiera de nuestras sucursales que tengan el servicio disponible.
           </div>
         </div>
       </div>
-
-      <footer class="container__footer">
-          <div class="container">
-                   <div class="logo-icon">
-                       <img src="img/logo-patita.png" alt="logo">
-                   </div>
-                   <div class="info__footer">
-                    <p>
-                       <a href="E-mail:Petshop@outlook.com">Petshop@outlook.com</a> <br>
-                       <a href="tel:+543364283962">(54) 3364-018729 (whatsapp)</a>
-                    </p>
-                    <p>
-                        S2000 ROSARIO <br>
-                        MONTEVIDEO 533<br>
-                        SANTA FE
-                    </p>
-                  </div>
-                 <div id="map" class="mapa">
-                 </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+             ¿Puedo llevar a mi gato al a peluquería de mascotas?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>¡Nuestros amigos felinos no son muy amigos de la peluquería!</strong> Si tuvieras cualquier 
+                    <a href="contacto.html"><strong>consulta</strong></a> 
+                    sobre peluquería felina, comunicate con uno de nuestros peluqueros que te van a poder asesorar específicamente sobre las necesidades de tu gato.
           </div>
-      </footer>
-    <!--SCRIPT-->
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ¿Si mi perro tiene pulgas puedo llevarlo a la peluquería?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Nuestras peluquerías mantienen un alto nivel de calidad de higiene y para esto queremos evitar contagios entre los perros que nos visitan. Por esto, si tu perro tiene pulgas no podrá ingresar al turno. Deberás desparasitarlo previamente y, una vez libre de pulgas y garrapatas, lo recibiremos para darle el servicio que se merece.
+          </div>
+        </div>
+      </div>
+        </div>
 
+    <footer>
+      <img src="img/logo-patita.png" alt="logo" width="20%">
+      <p>
+       S2000 ROSARIO <br>
+       MONTEVIDEO 533<br>
+       SANTA FE
+      </p>
+
+     </footer>
+
+    </div>
+
+    <section class="container_button_add">
+          <button class="button_add hover_shadow">
+                   <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" stroke-width=" 1.5"
+                        stroke="#ffffff" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                   </span>
+          </button>
+    <div class="box_button_iconos">
+                   <span class="iconos_desplegables desktop">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24px" stroke-width="1.5"
+                        stroke="#757575" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                        </svg>
+                   </span>
+                   <span class="iconos_desplegables tablet">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24px" stroke-width="1.5"
+                        stroke="#757575" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M10.5 19.5h3m-6.75 2.25h10.5a2.25 2.25 0 002.25-2.25v-15a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 4.5v15a2.25 2.25 0 002.25 2.25z" />
+                        </svg>
+                   </span>
+                   <span class="iconos_desplegables mobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24px" stroke-width="1.5"
+                        stroke="#757575" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                         d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                        </svg>
+                   </span>
+    </div>
+    </section>
+    
+    <!--SCRIPT-->
+    <script>
+      let appContainer = document.querySelector('#app_container');
+      let menuBar = document.querySelector('.menu');
+      let itemsMenu = document.querySelector('.items_menu');
+      let buttonAdd = document.querySelector('.button_add');
+      let buttonIcons = document.querySelector('.box_button_iconos');
+      let desktop = document.querySelector('.desktop');
+      let tablet = document.querySelector('.tablet');
+      let mobile = document.querySelector('.mobile');
+
+      buttonAdd.addEventListener('click', () => {
+      buttonAdd.classList.toggle('active_button_add')
+      buttonIcons.classList.toggle('active_icons_button')
+      })
+      desktop.addEventListener('click', () => {
+         appContainer.classList.add('desktop')
+         appContainer.classList.remove('tablet')
+         appContainer.classList.remove('mobile')
+      })
+      tablet.addEventListener('click', () => {
+        appContainer.classList.add('tablet')
+        appContainer.classList.remove('desktop')
+        appContainer.classList.remove('mobile')
+      })
+      mobile.addEventListener('click', () => {
+        appContainer.classList.add('mobile')
+        appContainer.classList.remove('desktop')
+        appContainer.classList.remove('tablet')
+      })
+      menuBar.addEventListener('click', () => {
+        itemsMenu.classList.toggle('open_menu')
+      })
+    </script>
     <script src="script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>

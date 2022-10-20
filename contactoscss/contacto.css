@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: white;
+  font-family: "Varela Round", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(9, 20, 56);
+  font-weight: 800;
+}
+
+#app_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+#app_container header {
+  width: 100%;
+  padding: 13px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to left, #00ecc7, #00e4ff, #59d3ff, #b6bdff, #e3acde);
+}
+#app_container header .logo {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0) linear-gradient(90deg, #90f3b3, #90e9f3, #909ff3, #cc90f3, #f390d1, #f39a90, #f3e590, #b8f390) repeat scroll 0% 0%/200% 200%;
+  background-clip: border-box;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+#app_container header .logo:hover {
+  -webkit-animation: GradientAnimation 2s ease infinite;
+  animation: GradientAnimation 2s ease infinite;
+}
+@-webkit-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#app_container header .menu {
+  display: none;
+}
+#app_container header .items_menu ul {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+#app_container header .items_menu ul li {
+  display: flex;
+}
+#app_container header .items_menu ul li a {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+#app_container header .items_menu ul li a:hover {
+  color: #cc90f3;
+}
+#app_container main {
+  position: relative;
+  width: 100%;
+  background-image: linear-gradient(to left, #00ecc7, #00e4ff, #59d3ff, #b6bdff, #e3acde);
+}
+#app_container main .contacto {
+  flex-direction: column;
+  align-items: flex-start;
+}
+#app_container main .contacto .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#app_container main .contacto .container h1 {
+  margin-top: 50px;
+  color: #cc90f3;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+#app_container main .contacto .container .align-row {
+  display: flex;
+  justify-content: space-between;
+}
+#app_container main .contacto .container .align-row form input:not([type=radio]):not([type=checkbox]),
+#app_container main .contacto .container .align-row form textarea,
+#app_container main .contacto .container .align-row form select {
+  width: 100%;
+  padding: 0, 3rem;
+}
+#app_container main .contacto .container .align-row form input:not([type=radio]):not([type=checkbox]):focus,
+#app_container main .contacto .container .align-row form textarea:focus,
+#app_container main .contacto .container .align-row form select:focus {
+  outline-color: #8d90f0;
+}
+#app_container main .contacto .container .align-row form fieldset {
+  margin: 1rem 0;
+  border-color: #fff;
+}
+#app_container main .contacto .container .align-row form textarea {
+  resize: none;
+  height: 20rem;
+}
+#app_container main .contacto .container .align-row form label {
+  margin: 0.5rem 0 0.2rem;
+  display: inline-block;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(5, 21, 68);
+}
+#app_container main .contacto .container .align-row .imagensubmit {
+  margin-top: 5px;
+  height: 3em;
+  width: 5em;
+  color: #5b5b5b;
+  font-family: "Varela Round", sans-serif;
+}
+#app_container main .contacto .container .align-row button {
+  font-family: inherit;
+  font-size: 20px;
+  background: #cc90f3;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+#app_container main .contacto .container .align-row button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+#app_container main .contacto .container .align-row button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+#app_container main .contacto .container .align-row button:hover .svg-wrapper {
+  -webkit-animation: fly-1 0.6s ease-in-out infinite alternate;
+          animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+#app_container main .contacto .container .align-row button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+#app_container main .contacto .container .align-row button:hover span {
+  transform: translateX(5em);
+}
+#app_container main .contacto .container .align-row button:active {
+  transform: scale(0.95);
+}
+@-webkit-keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+#app_container main .contacto a:-webkit-any-link {
+  color: #575757;
+}
+#app_container main .contacto a:-moz-any-link {
+  color: #575757;
+}
+#app_container main .contacto a:any-link,
+#app_container main .contacto p {
+  color: #575757;
+}
+#app_container footer {
+  background-image: linear-gradient(to left, #00ecc7, #00e4ff, #59d3ff, #b6bdff, #e3acde);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+}
+#app_container footer img {
+  width: 10%;
+}
+#app_container footer .info__footer {
+  padding: 70px;
+}
+#app_container footer .info__footer p {
+  margin-top: 15px;
+  margin-left: 70px;
+  color: rgb(9, 20, 56);
+  text-decoration: none;
+}
+#app_container footer .info__footer p a {
+  color: rgb(9, 20, 56);
+  text-decoration: none;
+}
+#app_container footer .mapa {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  max-width: 100%;
+  margin: 2rem;
+}
+#app_container.desktop {
+  width: 100%;
+}
+#app_container.tablet {
+  width: 992px;
+}
+#app_container.mobile {
+  width: 480px;
+}
+#app_container.mobile header .menu {
+  display: flex;
+  cursor: pointer;
+}
+#app_container.mobile header .items_menu {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  background: white;
+  z-index: 9;
+  width: 40%;
+  display: none;
+}
+#app_container.mobile header .items_menu.open_menu {
+  display: block;
+}
+#app_container.mobile header .items_menu ul {
+  flex-direction: column;
+  padding: 15px;
+}
+#app_container.mobile footer {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#app_container.mobile footer img {
+  width: 13%;
+  padding-left: 20px;
+}
+#app_container.mobile footer .info__footer {
+  flex-direction: row;
+  padding: 0;
+}
+#app_container.mobile footer .info__footer p {
+  font-size: 10px;
+  color: rgb(9, 20, 56);
+  text-decoration: none;
+}
+#app_container.mobile footer .info__footer p a {
+  color: rgb(9, 20, 56);
+  text-decoration: none;
+}
+#app_container.mobile footer .mapa {
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+  max-width: 100%;
+  margin: 2rem;
+}
+
+.container_button_add {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-top: -2rem;
+}
+.container_button_add .button_add {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #cc90f3;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.container_button_add .button_add.active_button_add {
+  transform: rotate(45deg);
+}
+.container_button_add .button_add span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_button_add .box_button_iconos {
+  display: flex;
+  visibility: hidden;
+  height: 0;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.2s;
+  flex-direction: column;
+}
+.container_button_add .box_button_iconos.active_icons_button {
+  visibility: visible;
+  height: 160px;
+}
+.container_button_add .box_button_iconos .iconos_desplegables {
+  margin-top: 0.5rem;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2), 0 7px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 16px 1px rgba(0, 0, 0, 0.12);
+}/*# sourceMappingURL=contacto.css.map */
