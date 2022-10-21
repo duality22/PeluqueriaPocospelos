@@ -48,20 +48,18 @@
                     <div class="container">
                         <h1>Contacto</h1>
                        <div class="align-row">
-                            <form method="POST">
+
+                            <form id="form" action="" class="form">
+                               <label for="nombre">Nombre Completo<span>⁕</span></label>
+                               <input name="nombre" required type="text" id="nombre" placeholder="Maria">
     
-                               <label for="nombre">Nombre</label>
-                               <input type="text" id="nome" name="nome" required>
+                               <label for="email">Correo electrónico<span>⁕</span></label>
+                               <input name="email" type="text" id="email" required placeholder="micorreo@email.com" size="30" >
     
-                               <label for="email">E-mail</label>
-                               <input type="email" id="email" name="email" placeholder="micorreo@email.com" size="30" required>
-    
-                               <label for="mensage">Mensaje</label>
-                               <textarea name="mensage" id="mensaje" placeholder="Puedes mandarnos una imagen de tu mascota para responder mejor tus consultas :)" size="30" required></textarea>
+                               <label for="message">Mensaje</label>
+                               <textarea name="message" id="message" required placeholder="Puedes mandarnos una imagen de tu mascota para responder mejor tus consultas :)" size="30"></textarea>
                             
-                               <input type="file" name="imagen" class="imagensubmit" accept="image/*, .jpg,png"><br>
-                           
-                               <button>
+                               <button type="submit">
                                    <div class="svg-wrapper-1">
                                      <div class="svg-wrapper">
                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -70,8 +68,8 @@
                                          </svg>
                                      </div>
                                    </div>
-    
-                                   <span>enviar</span>
+                                   <a href="mailto:aldanamicaela_22@outlook.com" id="formulario">a</a>
+                                   <span>enviar</span> 
                                </button>
                             </form>
                         </div>
@@ -170,6 +168,20 @@
         menuBar.addEventListener('click', () => {
           itemsMenu.classList.toggle('open_menu')
         })
+      </script>
+      <script>
+        const $form = document.querySelector('#form')
+        const $buttonMailto = document.querySelector('#formulario')
+
+        $form.addEventListener('submit', handleSubmit)
+
+        function handleSubmit(event){
+           event.preventDefault()
+           const form = new FormData(this)
+           console.log(form.get('nombre'))
+           $buttonMailto.setAttribute('href', `mailto:aldanamicaela_22@outlook.com?subject= Cliente ${form.get('nombre')} Correo ${form.get('email')}&body=${form.get('message')}`)
+           $buttonMailto.clik()
+        }
       </script>
       <script src="script.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>

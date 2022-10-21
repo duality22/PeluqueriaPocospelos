@@ -18,6 +18,10 @@ ul li a {
   font-weight: 800;
 }
 
+#formulario {
+  opacity: 0;
+}
+
 #app_container {
   display: flex;
   justify-content: center;
@@ -142,14 +146,8 @@ ul li a {
   font-size: 20px;
   color: rgb(5, 21, 68);
 }
-#app_container main .contacto .container .align-row .imagensubmit {
-  margin-top: 5px;
-  height: 3em;
-  width: 5em;
-  color: #5b5b5b;
-  font-family: "Varela Round", sans-serif;
-}
 #app_container main .contacto .container .align-row button {
+  margin-top: 10px;
   font-family: inherit;
   font-size: 20px;
   background: #cc90f3;
